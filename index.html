@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Главная страница</title>
+    <meta name="keywords" content="Авиастроительная компания">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Index.css">
+    <link rel="stylesheet" href="../CSS/w3.css">
+</head>
+
+<body>
+    <nav class="w3-sidebar w3-collapse w3-card w3-animate-left w3-bar-block " id="sidebar">
+        <button class="w3-bar-item w3-button w3-hide-large" onclick="w3_close()">Close &times;</button>
+        <ul>
+            <li>
+                <a href="index.html" class="w3-bar-item w3-dark-grey">Главная страница</a>
+            </li>
+            <li>
+                <a onclick="use_Accordion('accordion')" class="w3-bar-item">Проекты</a>
+                <div id="accordion" class="w3-container w3-hide">
+                    <a href="./Project1.html">Ил-96</a><br>
+                    <a href="./Project2.html">Ту-214</a><br>
+                    <a href="./Project3.html">МС-21</a>
+                </div>
+            </li>
+            <li>
+                <a href="Contact.html" class="w3-bar-item">Связаться</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="w3-main" style="margin-left:200px">
+
+        <header class="w3-container w3-blue">
+            <div class="w3-left">
+                <button class="w3-button w3-xlarge w3-hide-large w3-round-medium" style="margin-top: 26%"
+                    onclick="w3_open()">&#9776;</button>
+            </div>
+            <h2 class="w3-center">Авиастроительная компания</h2>
+        </header>
+
+        <section class="section_Intro content ">
+            <img src="../Images/Intro_Index.jpg" title="Авиастроение" alt="Авиастроение">
+            <div class="w3-container w3-text-white w3-display-left">
+                <h2>Авиастроение</h2>
+                <p>Лёгкие и прочные силовые элементы летательных аппаратов</p>
+            </div>
+        </section>
+
+        <section class="section content">
+            <div class="w3-container" style="padding-left: 30px; padding-right: 10px;">
+                <h2>Индустрия</h2>
+                <p>Применение композитных материалов в самолётостроении обеспечило новый качественный скачок в
+                    увеличении
+                    мощности летательных аппаратов и уменьшении их массы.</p>
+
+                <p>Объёмы авиаперевозок по всему миру ежегодно растут, и повышаются требования по обеспечению
+                    безопасности
+                    полётов. За счёт использования композитных материалов удаётся достичь улучшения функциональных
+                    характеристик с соответствующим повышением надёжности летательных аппаратов и безопасности полётов.
+                </p>
+            </div>
+        </section>
+
+        <section class="section section_Image1 content">
+            <img src="../Images/Image1_Index.jpg" title="Эффективность" alt="Эффективность">
+            <div class="w3-container w3-text-white w3-display-left w3-small">
+                <h4>Улучшение эффективности в полете</h4>
+            </div>
+        </section>
+
+        <section class="section content">
+            <div class="w3-container">
+                <h2 class="w3-center">Преимущества применения углекомпозитов</h2>
+                <div class=" w3-col l6" style="padding-left: 2.5rem;">
+                    <p>Использование композитных материалов на основе углеродного волокна позволяет снизить вес
+                        летательных
+                        аппаратов в среднем на 30%, сохранив при этом высокую прочность конструкции.</p>
+
+                    <p>Данный материал обладает высокой вибрационной и коррозионной стойкостью, что обеспечивает
+                        продолжительный срок службы и безопасную эксплуатацию механизмов.
+                    </p>
+                </div>
+                <div class=" w3-col l6" style="padding-left: 2.5rem;">
+                    <p>Преимущества композитных деталей на основе углеволокна в авиастроении перед деталями
+                        изготовленными
+                        из сплавов металлов:
+                    </p>
+                    <ul class="list--mark">
+                        <li>Весовые качества</li>
+                        <li>Высокая прочность</li>
+                        <li>Устойчивость к коррозии</li>
+                        <li>Высокие усталостные характеристики</li>
+                        <li>Износостойкость</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section w3-2021-french-blue content">
+            <div style="padding-left: 30px; padding-right: 10px;">
+                <hr style="border-top: 3px solid white">
+                <h3>Углепластик имеет малый удельный вес — 1,5 г/см³ (алюминиевые сплавы — 2,8 г/см³, титановые сплавы —
+                    4,5г/см³).<br>
+                    Деталь из композитов может быть до 80% легче металлической.<br>
+                    Прочность и жёсткость углепластиков примерно в шесть раз выше, чем у основных сортов стали.
+                </h3>
+                <hr style="border-top: 3px solid white">
+            </div>
+            <div class="w3-margin-top">
+                <h3 class="w3-center">Сравнительные характеристики углеволокна и других материалов</h3>
+                <div class="w3-container">
+                    <table class="w3-table w3-bordered w3-responsive">
+                        <tr class="w3-indigo">
+                            <th colspan="2">Тип волокна</th>
+                            <th>Прочность при растяжении, МПа</th>
+                            <th>Модуль упругости при растяжении, ГПаs</th>
+                            <th>Удлинение при разрыве, %</th>
+                            <th>Плотность, г/см3</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">Углеродное (на основе ПАН-прекурсора)</td>
+                            <td>высокопрочное со стандартным модулем</td>
+                            <td>3500-5000</td>
+                            <td>200-280</td>
+                            <td>1,4-2,0</td>
+                            <td>1,75-1,80</td>
+                        </tr>
+                        <tr>
+                            <td>высокопрочное среднемодульное</td>
+                            <td>4500-7000</td>
+                            <td>280-325</td>
+                            <td>1,7-2,1</td>
+                            <td>1,73-1,81</td>
+                        </tr>
+                        <tr>
+                            <td>высокомодульное</td>
+                            <td>3500-5000</td>
+                            <td>325-450</td>
+                            <td>0,7-1,4</td>
+                            <td>1,75-1,85</td>
+                        </tr>
+                        <tr>
+                            <td>сверхвысокомодульное</td>
+                            <td>2500-4000</td>
+                            <td>450-600</td>
+                            <td>0,7-1,0</td>
+                            <td>1,85-1,95</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Стеклянное</td>
+                            <td>E-стекло</td>
+                            <td>2500-3800</td>
+                            <td>70-75</td>
+                            <td>4,5-4,7</td>
+                            <td>2,5-2,7</td>
+                        </tr>
+                        <tr>
+                            <td>S-стекло</td>
+                            <td>4000-4500</td>
+                            <td>80-90</td>
+                            <td>5,0-5,3 </td>
+                            <td>2,5</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Органическое</td>
+                            <td>Арамидное</td>
+                            <td>3000-3600</td>
+                            <td>60-180</td>
+                            <td>2,4-3,6</td>
+                            <td>1,45</td>
+                        </tr>
+                        <tr>
+                            <td>Полиэтиленовое</td>
+                            <td>200-3000</td>
+                            <td>5-170</td>
+                            <td>3-80</td>
+                            <td>0,96</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Стальное</td>
+                            <td>высокопрочное</td>
+                            <td>1200-2800</td>
+                            <td>200</td>
+                            <td>3,5</td>
+                            <td>7,8</td>
+                        </tr>
+                        <tr>
+                            <td>нержавеющее</td>
+                            <td>800-2000</td>
+                            <td>190</td>
+                            <td>3,0</td>
+                            <td>7,8</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Базальтовое</td>
+                            <td>3000-4800</td>
+                            <td>90-110</td>
+                            <td>3,0</td>
+                            <td>2,6-2,8</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Борное</td>
+                            <td>3500-4000</td>
+                            <td>350-400</td>
+                            <td>0,5-0,7</td>
+                            <td>2,6</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section content">
+            <div class="w3-container w3-center">
+                <h2>Применение</h2>
+                <hr style="border-top: 3px solid black; margin-left: auto; margin-right: auto;">
+                <p>В современных летательных аппаратах используются ткани и препреги на основе углеродных волокон</p>
+            </div>
+            <div class="">
+                <div class="div_Image2 ">
+                    <div style="width: 100%;">
+                        <div class="w3-container w3-text-white div_Img">
+                            <img class="" data-original="/images/img-production-prepreg.svg" alt="Углеволокно"
+                                src="../Images/img-production-fiber.svg">
+                            <h3>Углеволокно</h3>
+                        </div>
+                        <div class="w3-container w3-text-white div_Img">
+                            <img class="" data-original="/images/img-production-prepreg.svg" alt="Ткани"
+                                src="../Images/img-production-fabric.svg">
+                            <h3>Ткани</h3>
+                        </div>
+                        <div class="w3-container w3-text-white div_Img">
+                            <img class="" data-original="/images/img-production-prepreg.svg" alt="Препреги"
+                                src="../Images/img-production-prepreg.svg">
+                            <h3>Препреги</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-container w3-margin-top">
+                <h4>Композиты используют в изготовлении ряда частей авиалайнера. В их числе:</h4>
+                <ul class="list--mark">
+                    <li>Воздушные тормоза</li>
+                    <li>Интерцепторы</li>
+                    <li>Элероны</li>
+                    <li>Закрылки</li>
+                    <li>Рули направления и рулевые поверхности</li>
+                    <li>Элемент конструкции сложного закрылка</li>
+                    <li>Пилоны</li>
+                    <li>Панели коробки приводов</li>
+                    <li>Люки коробки приводов</li>
+                    <li>Лопасти винтов</li>
+                    <li>Панели крыльев вертикального и горизонтального оперения</li>
+                    <li>Элементы силового набора (центроплан, кессон, лонжероны, стрингеры, нервюры)</li>
+                    <li>Элементы обшивки фюзеляжа</li>
+                    <li>Элементы внутреннего силового набора (балки и панели полов, перегородки)</li>
+                    <li>Детали интерьеров и отделки</li>
+                    <li>А также двери, капоты авиадвигателя и многое другое</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="w3-margin-bottom content">
+            <div class="w3-container">
+                <h2>Вывод</h2>
+                <div class="w3-col l6">
+                    <p>
+                        Внедрение композитных материалов в авиастроении позволило получить элементы конструкций
+                        воздушных судов с заданными параметрами прочности, надёжности, безопасности и другими
+                        эксплуатационными характеристиками.
+                    </p>
+                </div>
+                <div class="w3-col l6">
+                    <hr style="border-top: 3px solid black; ">
+                    <p>Лёгкие и прочные углекомпозиты позволяют совершенствовать конструкции современных летательных
+                        аппаратов, снижать расход топлива и увеличивать дальность полёта.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="w3-container w3-blue">
+            <p>2024. М.А. Вохминцев. Все права защищены.</p>
+        </footer>
+    </div>
+    <script>
+        function w3_open() {
+            document.getElementById("sidebar").style.display = "block";
+        }
+        function w3_close() {
+            document.getElementById("sidebar").style.display = "none";
+        }
+        function use_Accordion(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
+
+</html>
