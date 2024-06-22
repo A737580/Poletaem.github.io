@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Связь с нами</title>
+	<meta name="keywords" content="Авиастроительная компания">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/Contact.css">
+	<link rel="stylesheet" href="../CSS/w3.css">
+</head>
+
+<body>
+
+	<nav class="w3-sidebar w3-collapse w3-card w3-animate-left w3-bar-block" id="sidebar">
+		<button class="w3-bar-item w3-button w3-hide-large" onclick="w3_close()">Close &times;</button>
+		<ul>
+			<li>
+				<a href="index.html" class="w3-bar-item ">Главная страница</a>
+			</li>
+			<li>
+				<a onclick="use_Accordion('accordion')" class="w3-bar-item">Проекты</a>
+				<div id="accordion" class="w3-container w3-hide">
+					<a href="./Project1.html">Ил-96</a><br>
+					<a href="./Project2.html">Ту-214</a><br>
+					<a href="./Project3.html">МС-21</a>
+				</div>
+			</li>
+			<li>
+				<a href="Contact.html" class="w3-bar-item w3-dark-grey">Связаться</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="w3-main " style="margin-left:200px">
+
+		<header class="w3-container w3-blue">
+			<div class="w3-left">
+				<button class="w3-button w3-xlarge w3-hide-large " style="margin-top: 26%"
+					onclick="w3_open()">&#9776;</button>
+			</div>
+			<h2 class="w3-center w3-text-white">Авиастроительная компания</h2>
+		</header>
+
+		<section class="section content">
+			<div class="w3-container w3-margin-bottom">
+				<h2>Связь с компанией</h2>
+			</div>
+			<div class="w3-container container">
+				<div class=" w3-container w3-card w3-col l9">
+					<h3>Форма для Партнерства</h3>
+					<form action="./Success.html" method="post" id="form">
+						<label for="name">Имя</label>
+						<input type="text" id="name" name="name" required>
+
+						<label for="company">Компания</label>
+						<input type="text" id="company" name="company" required>
+
+						<label for="email">Электронная почта</label>
+						<input type="email" id="email" name="email" required>
+
+						<label for="phone">Телефон</label>
+						<input type="tel" id="phone" name="phone" required>
+
+						<label for="interest">Интерес к партнерству</label>
+						<select id="interest" name="interest" required>
+							<option value="">Выберите интерес</option>
+							<option value="investment">Инвестиции</option>
+							<option value="joint-development">Совместная разработка</option>
+							<option value="supplier">Поставка комплектующих</option>
+							<option value="other">Другое</option>
+						</select>
+
+						<label for="message">Сообщение</label>
+						<textarea id="message" name="message" rows="5" required></textarea>
+						<input type="file" name="file" value="Instead of a file" accept=".pdf" />
+
+						<button class="w3-margin-bottom w3-margin-top" type="submit">Отправить</button>
+					</form>
+				</div>
+
+				<div class=" w3-container w3-card right-side">
+					<div class="info">
+						<h4>Адрес</h4>
+						<p>г. Москва ул. Туполева 29</p>
+						<p>г. Казань ул. Николаева 7</p>
+					</div>
+					<div class="info">
+						<h4>Телефон</h4>
+						<p>8-443-000-00-00</p>
+						<p>8-952-000-00-00</p>
+					</div>
+					<div class="info">
+						<h4>Email</h4>
+						<p>support@site.ru</p>
+						<p>manager@company.ru</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="w3-container w3-blue">
+			<p>2024. М.А. Вохминцев. Все права защищены.</p>
+		</footer>
+	</div>
+
+
+
+
+	<script>
+		function use_Accordion(id) {
+			var x = document.getElementById(id);
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else {
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+		function w3_open() {
+			document.getElementById("sidebar").style.display = "block";
+		}
+		function w3_close() {
+			document.getElementById("sidebar").style.display = "none";
+		}
+	</script>
+
+</body>
+
+</html>
